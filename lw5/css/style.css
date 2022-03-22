@@ -1,0 +1,127 @@
+body
+{
+    background: #FFFFFF;
+    font-family: Montserrat;
+    font-style: normal;
+    color: #000000;
+}
+
+.logo
+{
+    font-weight: 700;
+    font-size: 30.8354px;
+    line-height: 38px;
+    letter-spacing: -0.045em;
+}
+
+.highlight
+{
+    color: #EE58B6;
+}
+
+.list
+{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.button
+{
+    background:#05090C;
+    border-radius: 4.59px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.button__top-button
+{
+    width: 247px;
+    height: 55px;
+}
+
+.button__bottom-button
+{
+    width: 332px;
+    height: 55px;
+}
+
+h1
+{
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 122px;
+}
+
+.subtitle1
+{
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 26px; 
+    line-height: 120%;
+    color: #000000b2;
+}
+
+.middle_section
+{
+    background: #000000;
+    width: 1920px;
+    height: 398px;
+    color: #FFFFFF
+}
+
+.point
+{
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    text-align: center;
+}
+
+h2
+{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 126.06%;
+}
+
+.subtitle2
+{
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+}
+
+h3
+{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+}
+
+.cards
+{
+    width: 358px;
+    height: 190px;
+    background: #000000;
+    border-radius: 7.35723px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+footer
+{
+    background: #000000;
+    color: #FFFFFF;
+    width: 1920px;
+    height: 108px;
+}
