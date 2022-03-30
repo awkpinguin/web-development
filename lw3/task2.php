@@ -1,24 +1,30 @@
 <?php
-    header("Content-Type: text/plain");
-    $text = trim($_GET['identifier']);
-    $arrayText = str_split($text);
-    $answer = 'Не введен ключ identifier или не присвоено значение ключу';
+header("Content-Type: text/plain");
+function getRequestParameter(string $key): ?string
+{
+    return $_GET[$key] ?? null;
+}
 
-    if($text != null)
+$identifier = getRequestParameter('identifier');
+
+if ($identifier === null || $identifier === "")
+{
+    echo 'Данные введены неверно';
+}
+else
+{
+    $arr = str_split($identifier);
+    if (is_numeric($arr[0]))
+        echo "NO, идентификатор должен начинаться с буквы";
+    else
     {
-        if(!ctype_alpha($arrayText[0]))
-            $answer = 'NO: Так как идентификатор должен начинаться строго с буквы.';
-        else
+        for ($i = 1; $i < count($arr); ++$i)
         {
-            for($i = 1; $i < count($arrayText); $i++)
-            {
-                $checked = ctype_alpha($arrayText[$i]) || is_numeric($arrayText[$i]);
-                if(!$checked)
-                    $answer = 'NO: Так как идентификатор должен состоять исключительно из букв или цифр.';
-                else
-                    $answer = 'YES: Все хорошо:)';
-            }
+            if (ctype_alpha($arr[$i]) || (is_numeric($arr[$i])))
+                $answer = "YES, идентификатор верный";
+            else
+                $answer = "NO, идентификатор неверный";
         }
+        echo $answer;
     }
-
-    echo $answer;
+}

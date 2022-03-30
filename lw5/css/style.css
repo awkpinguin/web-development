@@ -1,38 +1,21 @@
-body
-{
-    background: #FFFFFF;
-    font-family: Montserrat;
-    font-style: normal;
-    color: #000000;
-}
-
-.logo
-{
-    font-weight: 700;
-    font-size: 30.8354px;
-    line-height: 38px;
-    letter-spacing: -0.045em;
-}
-
-.highlight
-{
-    color: #EE58B6;
-}
-
 .list
 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font: 500 16px/1.25 Montserrat;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    max-width: 469px;
+    width: 469px;
+    left: 865px;
+    top: 18px;
 }
 
 .button
 {
-    background:#05090C;
-    border-radius: 4.59px;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 16px;
+    background:#05090c;
+    border-radius: 4.6px;
+    color: #fff;
+    font: 600 16px Montserrat;
 }
 
 .button__top-button
@@ -47,59 +30,41 @@ body
     height: 55px;
 }
 
-h1
+.title-main
 {
-    font-weight: 600;
-    font-size: 100px;
-    line-height: 122px;
+    font: 600 100px/1.22 Montserrat;
 }
 
-.subtitle1
+.highlight
 {
-    font-family: 'Roboto Condensed';
-    font-weight: 400;
-    font-size: 26px; 
-    line-height: 120%;
-    color: #000000b2;
+    color: #ee58b6;
 }
 
-.middle_section
+.subtitle-main
 {
-    background: #000000;
-    width: 1920px;
-    height: 398px;
-    color: #FFFFFF
+    font: 400 26px/1.2 Roboto Condensed;
 }
 
-.point
+.middle-section
 {
-    font-family: 'Roboto Condensed';
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 120%;
-    text-align: center;
+    background: #000;
+    font: 400 22px/1.2 Roboto Condensed;
+    color: #fff;
 }
 
-h2
+.title-points
 {
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 126.06%;
+    font: 500 48px Montserrat;
 }
 
-.subtitle2
+.subtitle-points
 {
-    font-family: 'Roboto Condensed';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 135%;
+    font: 400 18px/1.35 Roboto Condensed;
 }
 
-h3
+.title-cards
 {
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 59px;
+    font: 500 48px/1.2 Montserrat;
     text-align: center;
 }
 
@@ -107,21 +72,14 @@ h3
 {
     width: 358px;
     height: 190px;
-    background: #000000;
-    border-radius: 7.35723px;
-    font-family: 'Roboto Condensed';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FFFFFF;
+    background: #000;
+    border-radius: 7px;
+    font: 400 18px/1.17 Roboto Condensed;
+    color:#fff;
     margin-bottom: 20px;
 }
 
-footer
+.bottom-section
 {
-    background: #000000;
-    color: #FFFFFF;
-    width: 1920px;
-    height: 108px;
+    background: #000;
 }
